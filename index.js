@@ -1,6 +1,5 @@
 
 
-
 let getform=document.forms
 
 let getchatbox1=document.getElementById('chatbox1')
@@ -30,12 +29,11 @@ var formattedTime = currentDate.toLocaleTimeString('en-US', options);
     let getmessage=e.target.form[0].value
 if(getmessage!=""){
     console.log(getmessage)
-    // let name=document.createElement('b')
-    // name.innerText="You:"
+    
     let message=document.createElement('p')
     message.innerText=getmessage
-    message.style.background="green"
-    message.style.color="white"
+    message.style.background="lightblue"
+    message.style.color="black"
 
     //time
     let gettime=document.createElement('span')
@@ -45,10 +43,7 @@ if(getmessage!=""){
     gettime.style.color="white"
    
    
-
-
-    // getchatbox1.append(name)
-    // getdiv.append(geticon)
+    
     message.scrollTop=10;
     getdiv.append(message)
     getdiv.append(gettime)
@@ -61,16 +56,14 @@ if(getmessage!=""){
 
 
     setTimeout(()=>{
-    // let name=document.createElement('b')
-    // name.innerText="Goku:"
     let getdiv=document.createElement('div')
 
     let message=document.createElement('p')
     message.innerText=getmessage
-        // getchatbox2.append(name)
+        
         message.style.background="white"
         message.style.color="black"
-        //
+        
         //time
     let gettime=document.createElement('span')
     gettime.innerText=formattedTime
@@ -121,8 +114,8 @@ var formattedTime = currentDate.toLocaleTimeString('en-US', options);
    
     let message=document.createElement('p')
     message.innerText=getmessage+" "
-    message.style.background="green"
-    message.style.color="white"
+    message.style.background="lightblue"
+    message.style.color="black"
    
   
 //time
